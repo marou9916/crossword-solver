@@ -1,8 +1,9 @@
 # Crossword Solver
+Ce projet est une nouvelle tentative de résoudre le problème du Crossword Solver, que j'avais abordé il y a quelques mois. À ce moment-là, je ne connaissais pas bien le backtracking, ce qui m'avait posé des difficultés. Déterminé à surmonter ce défi, j'ai étudié et pratiqué le backtracking à travers divers exercices sur GeeksForGeeks. Vous pouvez trouver ces solutions dans mon repository `problem-solving-practice`, sous le dossier 'backtracking'. Grâce à cette expérience, je me sens maintenant prêt à appliquer mes nouvelles compétences pour résoudre le Crossword Solver.
 
 ## Introduction
 
-Ce projet est une nouvelle tentative de résoudre le problème du Crossword Solver, que j'avais abordé il y a quelques mois. À ce moment-là, je ne connaissais pas bien le backtracking, ce qui m'avait posé des difficultés. Déterminé à surmonter ce défi, j'ai étudié et pratiqué le backtracking à travers divers exercices sur GeeksForGeeks. Vous pouvez trouver ces solutions dans mon repository `problem-solving-practice`, sous le dossier 'backtracking'. Grâce à cette expérience, je me sens maintenant prêt à appliquer mes nouvelles compétences pour résoudre le Crossword Solver.
+Le Crossword Solver est un solveur de mots croisés en Go. Il prend une grille de puzzle et un ensemble de mots comme entrée et trouve les positions où les mots peuvent être placés dans la grille.
 
 ## Structure du Projet
 ```
