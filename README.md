@@ -38,7 +38,7 @@ crossword-solver/
 1. **Cloner le dépôt**:
 
     ```bash
-    git clone <URL_du_dépôt>
+    git clone https://github.com/marou9916/crossword-solver.git
     cd crossword-solver
     ```
 
@@ -61,4 +61,6 @@ Les contributions sont les bienvenues ! Veuillez soumettre une pull request ou o
 ## Licence
 
 Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
+
+
 
