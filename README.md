@@ -1,9 +1,9 @@
 # Crossword Solver
-Ce projet est une nouvelle tentative de résoudre le problème du Crossword Solver, que j'avais abordé il y a quelques mois. À ce moment-là, je ne connaissais pas bien le backtracking, ce qui m'avait posé des difficultés. Déterminé à surmonter ce défi, j'ai étudié et pratiqué le backtracking à travers divers exercices sur GeeksForGeeks. Vous pouvez trouver ces solutions dans mon repository `problem-solving-practice`, sous le dossier 'backtracking'. Grâce à cette expérience, je me sens maintenant prêt à appliquer mes nouvelles compétences pour résoudre le Crossword Solver.
+This project is a renewed attempt to solve the Crossword Solver problem, which I had tackled a few months ago. At that time, I didn't have a good grasp of backtracking, which posed some difficulties. Determined to overcome this challenge, I studied and practiced backtracking through various exercises on GeeksForGeeks. You can find these solutions in my repository problem-solving-practice, under the 'backtracking' folder. With this experience, I now feel ready to apply my new skills to solve the Crossword Solver.
 
 ## Introduction
 
-Le Crossword Solver est un solveur de mots croisés en Go. Il prend une grille de puzzle et un ensemble de mots comme entrée et trouve les positions où les mots peuvent être placés dans la grille.
+The Crossword Solver is a crossword puzzle solver written in Go. It takes a puzzle grid and a set of words as input and finds the positions where the words can be placed in the grid.
 
 ## Structure du Projet
 ```
@@ -30,11 +30,11 @@ crossword-solver/
 └── go.sum
 ```
 
-## Fonctionnalités
+## Features
 
-- **Validation du format du puzzle**: Vérifie que la grille de puzzle fournie est dans un format valide.
-- **Validation de l'ensemble de mots**: Vérifie que l'ensemble de mots fourni ne contient pas de doublons.
-- **Placement des mots**: Détermine les positions possibles pour placer les mots dans la grille.
+- **Puzzle Format Validation**: Checks that the provided puzzle grid is in a valid format.
+- **Word Set Validation**: Ensures the provided set of words contains no duplicates.
+- **Word Placement**:  Determines possible positions to place words in the grid.
 
 ## Utilisation
 
@@ -59,11 +59,10 @@ crossword-solver/
 
 ## Contributions
 
-Les contributions sont les bienvenues ! Veuillez soumettre une pull request ou ouvrir une issue pour discuter des modifications que vous souhaitez apporter.
+Contributions are welcome! Please submit a pull request or open an issue to discuss any changes you would like to make.
 
 ## Licence
 
-Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
-
+This project is licensed under the MIT License. See the LICENSE file for details.
 
 
