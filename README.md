@@ -3,7 +3,7 @@
 Ce projet est un solveur de mots croisés en Go. Il prend une grille de puzzle et un ensemble de mots comme entrée et trouve les positions où les mots peuvent être placés dans la grille.
 
 ## Structure du Projet
-
+```
 crossword-solver/
 ├── cmd/
 │ └── crosswordsolver/
@@ -25,7 +25,7 @@ crossword-solver/
 │ └── solver_test.go
 ├── go.mod
 └── go.sum
-
+```
 
 ## Fonctionnalités
 
