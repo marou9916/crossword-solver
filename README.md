@@ -38,20 +38,20 @@ crossword-solver/
 
 ## Utilisation
 
-1. **Cloner le dépôt**:
+1. **Clone the repository**:
 
     ```bash
     git clone https://github.com/marou9916/crossword-solver.git
     cd crossword-solver
     ```
 
-2. **Installer les dépendances**:
+2. **Install dependencies**:
 
     ```bash
     go mod tidy
     ```
 
-3. **Exécuter les tests**:
+3. **Run the tests**:
 
     ```bash
     go test ./...
