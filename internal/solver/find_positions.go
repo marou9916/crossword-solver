@@ -1,16 +1,21 @@
 package solver
 
-func FindPositions(grid [][]rune, searchedContent rune) []Position {
-	var positionsWhereContentIsFound []Position
+import (
+	"crossword-solver/internal/model"
+)
+
+func FindPositions(grid [][]rune, searchedContents []rune) []model.Position {
+	var positions []model.Position
 
 	for rowIndex, line := range grid {
 		for colIndex, contentOfTheLine := range line {
-			if contentOfTheLine == searchedContent {
-				position := Position {row : rowIndex, col : colIndex}
-				positionsWhereContentIsFound = append(positionsWhereContentIsFound, position)
+			for _, content := range searchedContents {
+				if contentOfTheLine == content {
+					positions = append(positions, model.Position{Row: rowIndex, Col: colIndex})
+				}
 			}
 		}
 	}
 
-	return positionsWhereContentIsFound
+	return positions
 }

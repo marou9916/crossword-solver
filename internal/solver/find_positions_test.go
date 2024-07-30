@@ -1,74 +1,67 @@
 package solver
 
 import (
+	"crossword-solver/internal/model"
 	"reflect"
 	"testing"
 )
 
 func TestFindPositions(t *testing.T) {
 	tests := []struct {
-		grid            [][]rune
-		searchedContent rune
-		expected        []Position
+		name             string
+		grid             [][]rune
+		searchedContents []rune
+		expected         []model.Position
 	}{
 		{
+			name: "Find positions of '1' and '2'",
 			grid: [][]rune{
-				{'.', 'A', 'B'},
-				{'B', '.', 'A'},
-				{'A', 'B', '.'},
+				{'1', '0', '1'},
+				{'0', '2', '0'},
+				{'1', '0', '1'},
 			},
-			searchedContent: 'A',
-			expected: []Position{
-				{0, 1},
-				{1, 2},
-				{2, 0},
-			},
-		},
-
-		{
-			grid: [][]rune{
-				{'.', '.', '.'},
-				{'.', 'A', '.'},
-				{'.', '.', '.'},
-			},
-			searchedContent: 'A',
-			expected: []Position{
-				{1, 1},
+			searchedContents: []rune{'1', '2'},
+			expected: []model.Position{
+				{Row: 0, Col: 0}, {Row: 0, Col: 2},
+				{Row: 1, Col: 1},
+				{Row: 2, Col: 0}, {Row: 2, Col: 2},
 			},
 		},
 		{
+			name: "Find positions of '.'",
 			grid: [][]rune{
-				{'A', 'A', '.'},
-				{'.', 'A', 'A'},
-				{'A', '.', 'A'},
+				{'1', '.', '1'},
+				{'0', '.', '0'},
+				{'.', '0', '1'},
 			},
-			searchedContent: 'A',
-			expected: []Position{
-				{0, 0},
-				{0, 1},
-				{1, 1},
-				{1, 2},
-				{2, 0},
-				{2, 2},
+			searchedContents: []rune{'.'},
+			expected: []model.Position{
+				{Row: 0, Col: 1},
+				{Row: 1, Col: 1},
+				{Row: 2, Col: 0},
 			},
 		},
 		{
+			name: "Mixed content",
 			grid: [][]rune{
-				{'#', '#', '#'},
-				{'#', '@', '#'},
-				{'#', '#', '#'},
+				{'1', '0', '1'},
+				{'2', '.', '2'},
+				{'0', '0', '0'},
 			},
-			searchedContent: '@',
-			expected: []Position{
-				{1, 1},
+			searchedContents: []rune{'1', '.', '2'},
+			expected: []model.Position{
+				{Row: 0, Col: 0}, {Row: 0, Col: 2},
+				{Row: 1, Col: 0}, {Row: 1, Col: 1}, {Row: 1, Col: 2},
 			},
 		},
 	}
 
 	for _, test := range tests {
-		result := FindPositions(test.grid, test.searchedContent)
-		if !reflect.DeepEqual(result, test.expected) {
-			t.Errorf("GetPositions(%v, %q) = %v; want %v", test.grid, test.searchedContent, result, test.expected)
-		}
+		t.Run(test.name, func(t *testing.T) {
+			result := FindPositions(test.grid, test.searchedContents)
+			if !reflect.DeepEqual(result, test.expected) {
+				t.Errorf("FindPositions(%v, %v) = %v; want %v", test.grid, test.searchedContents, result, test.expected)
+			}
+		})
 	}
 }
