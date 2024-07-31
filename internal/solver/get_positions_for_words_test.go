@@ -1,11 +1,10 @@
 package solver
 
 import (
+	"crossword-solver/internal/model"
 	"reflect"
 	"testing"
-	"crossword-solver/internal/model"
 )
-
 
 func TestGetPositionsForWords(t *testing.T) {
 	grid := [][]rune{
