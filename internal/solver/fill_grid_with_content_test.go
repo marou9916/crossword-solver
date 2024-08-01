@@ -1,18 +1,21 @@
 package solver
 
 import (
+	"crossword-solver/internal/model"
 	"reflect"
 	"testing"
-	"crossword-solver/internal/model"
 )
+
 func TestFillGridWithContent(t *testing.T) {
 	tests := []struct {
+		name         string
 		grid         [][]rune
 		positions    []model.Position
 		content      rune
 		expectedGrid [][]rune
 	}{
 		{
+			name: "Test 1",
 			grid: [][]rune{
 				{' ', ' ', ' '},
 				{' ', ' ', ' '},
@@ -29,6 +32,7 @@ func TestFillGridWithContent(t *testing.T) {
 			},
 		},
 		{
+			name: "Test 2",
 			grid: [][]rune{
 				{' ', ' ', ' '},
 				{' ', ' ', ' '},
@@ -47,9 +51,11 @@ func TestFillGridWithContent(t *testing.T) {
 	}
 
 	for _, test := range tests {
-		FillGridWithContent(test.grid, test.positions, test.content)
-		if !reflect.DeepEqual(test.grid, test.expectedGrid) {
-			t.Errorf("FillGridWithContent(%v, %v, %q) = %v; want %v", test.grid, test.positions, test.content, test.grid, test.expectedGrid)
-		}
+		t.Run(test.name, func(t *testing.T) {
+			FillGridWithContent(test.grid, test.positions, test.content)
+			if !reflect.DeepEqual(test.grid, test.expectedGrid) {
+				t.Errorf("FillGridWithContent(%v, %v, %q) = %v; want %v", test.grid, test.positions, test.content, test.grid, test.expectedGrid)
+			}
+		})
 	}
 }

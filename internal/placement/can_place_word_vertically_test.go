@@ -7,7 +7,7 @@ import (
 
 func TestCanPlaceWordVertically(t *testing.T) {
     grid := [][]rune{
-        {'0', '0', '0', '0'},
+        {'a', 'i', 'o', 'w'},
         {'0', '.', '.', '0'},
         {'0', '0', '0', '0'},
         {'0', '.', '.', '0'},
@@ -18,12 +18,12 @@ func TestCanPlaceWordVertically(t *testing.T) {
         pos      model.Position
         expected bool
     }{
-        {"word", model.Position{Row: 0, Col: 0}, true},
+        {"word", model.Position{Row: 0, Col: 3}, true},
         {"wor", model.Position{Row: 1, Col: 1}, false},
         {"wor", model.Position{Row: 1, Col: 2}, false},
         {"w", model.Position{Row: 1, Col: 3}, true},
         // Ajout de tests pour les lettres correspondantes
-        {"anta", model.Position{Row: 0, Col: 2}, false},
+        {"anta", model.Position{Row: 0, Col: 0}, true},
     }
 
     for _, test := range tests {
