@@ -1,4 +1,4 @@
-package solver
+package placement
 
 import "crossword-solver/internal/model"
 
