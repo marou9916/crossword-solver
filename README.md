@@ -5,6 +5,24 @@ This project is a renewed attempt to solve the Crossword Solver problem, which I
 
 The Crossword Solver is a crossword puzzle solver written in Go. It takes a puzzle grid and a set of words as input and finds the positions where the words can be placed in the grid.
 
+## Learning Highlights
+
+Working on the Crossword Solver project has provided valuable insights and hands-on experience in several key areas of software development:
+
+**Unit Testing in Go**: I learned how to write comprehensive unit tests for various functions, ensuring that each component of the system behaves as expected. This practice not only helps in maintaining code quality but also aids in early detection of bugs.
+
+**Iterative Problem Decomposition**: Tackling the Crossword Solver problem required breaking down the problem into smaller, manageable tasks. This iterative decomposition approach helped in systematically addressing each aspect of the problem, leading to a robust solution.
+
+**Logical Grouping of Functions**: I organized functions into logical units using packages. This modular approach enhances code readability, maintainability, and reusability. Each package, such as placement, solver, remover, and validator, serves a distinct purpose, contributing to a well-structured codebase.
+
+**Naming Conventions**: Giving meaningful names to functions, variables, and files is crucial for code clarity. Throughout the project, I adhered to naming conventions that accurately describe the purpose and functionality of each component, making the code easier to understand and navigate.
+
+**Backtracking Algorithm**: Implementing the backtracking algorithm for solving the crossword puzzle was a significant learning experience. I gained a deeper understanding of this algorithmic technique and its application in solving complex problems.
+
+**Practical Go Experience**: This project provided extensive hands-on experience with the Go programming language, including its syntax, standard libraries, and best practices for writing idiomatic Go code.
+
+These learning highlights not only contributed to the successful completion of the Crossword Solver project but also enriched my overall skill set as a software developer.
+
 ## Project Structure
 ```
 crossword-solver/
