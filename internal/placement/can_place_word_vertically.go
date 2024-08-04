@@ -15,8 +15,12 @@ func CanPlaceWordVertically(grid [][]rune, word string, pos model.Position) bool
 		currentCell := grid[pos.Row+i][pos.Col]
 
 		// Conditions 2 et 3 combinées: Conflit avec des lettres existantes ou cellules bloquantes ou blocage par des cellules bloquantes
-		if currentCell != '0' && currentCell != rune(word[i]) || currentCell == '.' {
-			return false
+		if currentCell != '0' {
+			if currentCell == ' ' {
+				return true
+			} else if currentCell != rune(word[i]) || currentCell == '.' {
+				return false
+			}
 		}
 	}
 
