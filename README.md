@@ -1,4 +1,5 @@
-# Crossword Solver
+# Crossword Solver (voir la version française de ce document en dessous de la version anglaise après la section "Licence")
+(See the French version of this document below the English version after the "License" section.)
 
 This project is a renewed attempt to solve the Crossword Solver problem, which I had tackled a few months ago. At that time, I didn't have a good grasp of backtracking, which posed some difficulties. Determined to overcome this challenge, I studied and practiced backtracking through various exercises on GeeksForGeeks. You can find these solutions in my repository `problem-solving-practice`, under the 'backtracking' folder. With this experience, I now feel ready to apply my new skills to solve the Crossword Solver.
 
