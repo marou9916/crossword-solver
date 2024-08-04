@@ -137,7 +137,7 @@ Le Crossword Solver est un solveur de mots croisés écrit en Go. Il prend une g
 
 Travailler sur le projet Crossword Solver m'a permis d'acquérir des connaissances et une expérience précieuses dans plusieurs domaines clés du développement logiciel :
 
-**Tests Unitaires en Go** : J'ai appris à écrire des tests unitaires complets pour diverses fonctions, garantissant que chaque composant du système fonctionne comme prévu. Cette pratique aide non seulement à maintenir la qualité du code, mais aussi à détecter les bogues plus tôt.
+**Tests Unitaires en Go** : J'ai appris à écrire des tests unitaires complets pour diverses fonctions, garantissant que chaque composant du système fonctionne comme prévu. Cette pratique aide non seulement à maintenir la qualité du code, mais aussi à détecter les bugs plus tôt.
 
 **Décomposition Itérative du Problème** : Aborder le problème du Crossword Solver a nécessité la division du problème en tâches plus petites et gérables. Cette approche itérative de décomposition a permis de traiter systématiquement chaque aspect du problème, conduisant à une solution robuste.
 
