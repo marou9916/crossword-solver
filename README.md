@@ -149,7 +149,7 @@ Travailler sur le projet Crossword Solver m'a permis d'acquérir des connaissanc
 
 **Expérience Pratique avec Go** : Ce projet a fourni une expérience pratique étendue avec le langage de programmation Go, y compris sa syntaxe, ses bibliothèques standard, et les meilleures pratiques pour écrire un code Go idiomatique.
 
-Ces points d'apprentissage ont non seulement contribué à l'achèvement réussi du projet Crossword Solver, mais ont également enrichi mon ensemble de compétences global en tant que développeur logiciel.
+Ces points d'apprentissage ont non seulement contribué à l'achèvement réussi du projet Crossword Solver, mais ont également enrichi mon ensemble global de compétences en tant que développeur logiciel.
 
 
 ## Structure du projet
