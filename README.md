@@ -53,23 +53,23 @@ crossword-solver/
 ```
 
 ## Features
-
+``
     **Puzzle Format Validation**: Checks that the provided puzzle grid is in a valid format.
-
+``
     **Word Set Validation**: Ensures the provided set of words contains no duplicates.
-
+``
     **Grid Conversion**: Converts the puzzle grid from a string format to a 2D rune slice.
-
+``
     **Dot Position Identification**: Identifies the positions in the grid where words can potentially be placed.
-
+``
     **Word Placement Checking**: Checks if a word can be placed at a specific position horizontally or vertically.
-
+``
     **Word Placement**: Places words in the grid if they can be placed without conflicts.
-
+``
     **Word Removal**: Removes words from the grid, useful for backtracking.
-
+``
     **Backtracking Solver**: Uses backtracking to try to place all words in the grid.
-
+``
     **Grid Printing**: Prints the current state of the grid.
 
 ## Utilisation
