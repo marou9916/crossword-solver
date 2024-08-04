@@ -146,6 +146,7 @@ Travailler sur le projet Crossword Solver m'a permis d'acquérir des connaissanc
 **Conventions de Nommage** : Donner des noms significatifs aux fonctions, variables et fichiers est crucial pour la clarté du code. Tout au long du projet, j'ai respecté des conventions de nommage décrivant précisément le but et la fonctionnalité de chaque composant, rendant le code plus facile à comprendre et à naviguer.
 
 **Algorithme de Backtracking** : L'implémentation de l'algorithme de backtracking pour résoudre le puzzle de mots croisés a été une expérience d'apprentissage significative. J'ai approfondi ma compréhension de cette technique algorithmique et de son application pour résoudre des problèmes complexes.
+
 **Expérience Pratique avec Go** : Ce projet a fourni une expérience pratique étendue avec le langage de programmation Go, y compris sa syntaxe, ses bibliothèques standard, et les meilleures pratiques pour écrire un code Go idiomatique.
 
 Ces points d'apprentissage ont non seulement contribué à l'achèvement réussi du projet Crossword Solver, mais ont également enrichi mon ensemble de compétences global en tant que développeur logiciel.

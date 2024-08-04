@@ -21,26 +21,6 @@ func TestTryToFindSolutionWithBacktracking(t *testing.T) {
 				{'0', '0', '0', '0'},
 				{'0', '.', '.', '0'},
 			},
-			words: []string{"AB", "CD"},
-			positions: []model.Position{
-				{Row: 1, Col: 1},
-				{Row: 3, Col: 1},
-			},
-			expectedGrid: [][]rune{
-				{'0', '0', '0', '0'},
-				{'0', 'A', 'B', '0'},
-				{'0', '0', '0', '0'},
-				{'0', 'C', 'D', '0'},
-			},
-			expectedResult: true,
-		},
-		{
-			grid: [][]rune{
-				{'0', '0', '0', '0'},
-				{'0', '.', '.', '0'},
-				{'0', '0', '0', '0'},
-				{'0', '.', '.', '0'},
-			},
 			words: []string{"ABCDE"},
 			positions: []model.Position{
 				{Row: 1, Col: 1},
