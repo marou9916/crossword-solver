@@ -147,7 +147,7 @@ Travailler sur le projet Crossword Solver m'a permis d'acquérir des connaissanc
 
 **Algorithme de Backtracking** : L'implémentation de l'algorithme de backtracking pour résoudre le puzzle de mots croisés a été une expérience d'apprentissage significative. J'ai approfondi ma compréhension de cette technique algorithmique et de son application pour résoudre des problèmes complexes.
 
-**Expérience Pratique avec Go** : Ce projet a fourni une expérience pratique étendue avec le langage de programmation Go, y compris sa syntaxe, ses bibliothèques standard, et les meilleures pratiques pour écrire un code Go idiomatique.
+**Expérience Pratique avec Go** : Ce projet a fourni une expérience pratique étendue avec le langage de programmation Go, y compris sa syntaxe, ses bibliothèques standards, et les meilleures pratiques pour écrire un code Go idiomatique.
 
 Ces points d'apprentissage ont non seulement contribué à l'achèvement réussi du projet Crossword Solver, mais ont également enrichi mon ensemble global de compétences en tant que développeur logiciel.
 
