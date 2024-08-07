@@ -29,45 +29,48 @@ These learning highlights not only contributed to the successful completion of t
 ```
 crossword-solver/
 ├── cmd/
-│   └── crosswordsolver/
-│       └── main.go
+│ └── crosswordsolver/
+│ └── main.go
+├── docs/
+│ └── README.md
 ├── internal/
-│   ├── model/
-│   │   └── position.go
-│   ├── placement/
-│   │   ├── can_place_word_horizontally.go
-│   │   ├── can_place_word_horizontally_test.go
-│   │   ├── place_word_horizontally.go
-│   │   ├── place_word_horizontally_test.go
-│   │   ├── can_place_word_vertically.go
-│   │   ├── can_place_word_vertically_test.go
-│   │   └── place_word_vertically.go
-│   │   ├── place_word_vertically_test.go
-│   ├── remover/
-│   │   ├── remove_word_horizontally.go
-│   │   ├── remove_word_horizontally_test.go
-│   │   ├── remove_word_vertically.go
-│   │   └── remove_word_vertically_test.go
-│   ├── solver/
-│   │   ├── try_to_find_solution_with_backtracking.go
-│   │   ├── try_to_find_solution_with_backtracking_test.go
-│   │   ├── convert_puzzle_to_grid.go
-│   │   ├── convert_puzzle_to_grid_test.go
-│   │   ├── fill_grid_with_content.go
-│   │   ├── fill_grid_with_content_test.go
-│   │   ├── find_positions.go
-│   │   ├── find_positions_test.go
-│   │   ├── get_dot_positions.go
-│   │   ├── get_dot_positions_test.go
-│   │   └── solve.go
-│   ├── printer/
-│   │   └── print_grid.go
-│   └── validator/
-│       ├── validate_string.go
-│       ├── validate_string_test.go
-│       ├── validate_setofwords.go
-│       └── validate_setofwords_test.go
-├── setup_crossWordSolver.sh
+│ ├── model/
+│ │ └── position.go
+│ ├── placement/
+│ │ ├── can_place_word_horizontally.go
+│ │ ├── can_place_word_horizontally_test.go
+│ │ ├── place_word_horizontally.go
+│ │ ├── place_word_horizontally_test.go
+│ │ ├── can_place_word_vertically.go
+│ │ ├── can_place_word_vertically_test.go
+│ │ └── place_word_vertically.go
+│ │ ├── place_word_vertically_test.go
+│ ├── remover/
+│ │ ├── remove_word_horizontally.go
+│ │ ├── remove_word_horizontally_test.go
+│ │ ├── remove_word_vertically.go
+│ │ └── remove_word_vertically_test.go
+│ ├── solver/
+│ │ ├── try_to_find_solution_with_backtracking.go
+│ │ ├── try_to_find_solution_with_backtracking_test.go
+│ │ ├── convert_puzzle_to_grid.go
+│ │ ├── convert_puzzle_to_grid_test.go
+│ │ ├── fill_grid_with_content.go
+│ │ ├── fill_grid_with_content_test.go
+│ │ ├── find_positions.go
+│ │ ├── find_positions_test.go
+│ │ ├── get_dot_positions.go
+│ │ ├── get_dot_positions_test.go
+│ │ └── solve.go
+│ ├── printer/
+│ │ └── print_grid.go
+│ └── validator/
+│ ├── validate_string.go
+│ ├── validate_string_test.go
+│ ├── validate_setofwords.go
+│ └── validate_setofwords_test.go
+├── scripts/
+│ └── setup_crossWordSolver.sh
 ├── go.mod
 └── go.sum
 ```
@@ -156,45 +159,48 @@ Ces points d'apprentissage ont non seulement contribué à l'achèvement réussi
 ```
 crossword-solver/
 ├── cmd/
-│   └── crosswordsolver/
-│       └── main.go
+│ └── crosswordsolver/
+│ └── main.go
+├── docs/
+│ └── README.md
 ├── internal/
-│   ├── model/
-│   │   └── position.go
-│   ├── placement/
-│   │   ├── can_place_word_horizontally.go
-│   │   ├── can_place_word_horizontally_test.go
-│   │   ├── place_word_horizontally.go
-│   │   ├── place_word_horizontally_test.go
-│   │   ├── can_place_word_vertically.go
-│   │   ├── can_place_word_vertically_test.go
-│   │   └── place_word_vertically.go
-│   │   ├── place_word_vertically_test.go
-│   ├── remover/
-│   │   ├── remove_word_horizontally.go
-│   │   ├── remove_word_horizontally_test.go
-│   │   ├── remove_word_vertically.go
-│   │   └── remove_word_vertically_test.go
-│   ├── solver/
-│   │   ├── try_to_find_solution_with_backtracking.go
-│   │   ├── try_to_find_solution_with_backtracking_test.go
-│   │   ├── convert_puzzle_to_grid.go
-│   │   ├── convert_puzzle_to_grid_test.go
-│   │   ├── fill_grid_with_content.go
-│   │   ├── fill_grid_with_content_test.go
-│   │   ├── find_positions.go
-│   │   ├── find_positions_test.go
-│   │   ├── get_dot_positions.go
-│   │   ├── get_dot_positions_test.go
-│   │   └── solve.go
-│   ├── printer/
-│   │   └── print_grid.go
-│   └── validator/
-│       ├── validate_string.go
-│       ├── validate_string_test.go
-│       ├── validate_setofwords.go
-│       └── validate_setofwords_test.go
-├── setup_crossWordSolver.sh
+│ ├── model/
+│ │ └── position.go
+│ ├── placement/
+│ │ ├── can_place_word_horizontally.go
+│ │ ├── can_place_word_horizontally_test.go
+│ │ ├── place_word_horizontally.go
+│ │ ├── place_word_horizontally_test.go
+│ │ ├── can_place_word_vertically.go
+│ │ ├── can_place_word_vertically_test.go
+│ │ └── place_word_vertically.go
+│ │ ├── place_word_vertically_test.go
+│ ├── remover/
+│ │ ├── remove_word_horizontally.go
+│ │ ├── remove_word_horizontally_test.go
+│ │ ├── remove_word_vertically.go
+│ │ └── remove_word_vertically_test.go
+│ ├── solver/
+│ │ ├── try_to_find_solution_with_backtracking.go
+│ │ ├── try_to_find_solution_with_backtracking_test.go
+│ │ ├── convert_puzzle_to_grid.go
+│ │ ├── convert_puzzle_to_grid_test.go
+│ │ ├── fill_grid_with_content.go
+│ │ ├── fill_grid_with_content_test.go
+│ │ ├── find_positions.go
+│ │ ├── find_positions_test.go
+│ │ ├── get_dot_positions.go
+│ │ ├── get_dot_positions_test.go
+│ │ └── solve.go
+│ ├── printer/
+│ │ └── print_grid.go
+│ └── validator/
+│ ├── validate_string.go
+│ ├── validate_string_test.go
+│ ├── validate_setofwords.go
+│ └── validate_setofwords_test.go
+├── scripts/
+│ └── setup_crossWordSolver.sh
 ├── go.mod
 └── go.sum
 ```

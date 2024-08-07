@@ -9,15 +9,41 @@ import (
 )
 
 func main() {
-	puzzle := `2001
-0..0
-1000
-0..0`
-	words := []string{"casa", "alan", "ciao", "anta"}
+	// 	puzzle := `2001
+	// 0..0
+	// 1000
+	// 0..0`
+	// 	words := []string{"casa", "alan", "ciao", "anta"}
+
+	puzzle := `...1...........
+..1000001000...
+...0....0......
+.1......0...1..
+.0....100000000
+100000..0...0..
+.0.....1001000.
+.0.1....0.0....
+.10000000.0....
+.0.0......0....
+.0.0.....100...
+...0......0....
+..........0....`
+	words := []string{"sun",
+		"sunglasses",
+		"suncream",
+		"swimming",
+		"bikini",
+		"beach",
+		"icecream",
+		"tan",
+		"deckchair",
+		"and",
+		"seaside",
+		"sandals"}
 
 	// Validation des entrées
 	if !validator.IsValidString(puzzle) || !validator.IsValidSetOfWords(words) {
-		fmt.Println("Error in validation")
+		fmt.Println("Error in validation. One or both of the inputs should be in a wrong format")
 		return
 	}
 
